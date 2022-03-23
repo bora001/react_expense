@@ -13,6 +13,6 @@
 .create_expense input {
   width: 200px;
 }
-.create_expense input[type="submit"] {
+.create_expense button[type="submit"] {
   width: 80px;
 }
