@@ -1,13 +1,18 @@
 import "./ExpenseItem.css";
-function ExpenseItem() {
+function ExpenseItem(props) {
   return (
-    <div className="expense_item">
-      <div className="expense_item_desc">
-        <div>March 23th 2021</div>
-        <h2>Car Insurance</h2>
-        <p className="expense_item_price">$294.67</p>
-      </div>
-    </div>
+    <>
+      {props.data &&
+        props.data.map((item) => (
+          <div className="expense_item" key={new Date()}>
+            <div className="expense_item_desc">
+              <div>{item.date}</div>
+              <h2>{item.title}</h2>
+              <p className="expense_item_price">${item.amount}</p>
+            </div>
+          </div>
+        ))}
+    </>
   );
 }
 
