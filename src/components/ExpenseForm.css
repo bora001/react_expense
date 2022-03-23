@@ -1,0 +1,18 @@
+.create_expense {
+  width: 80%;
+  margin: 0 auto;
+  border: 2px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.create_expense label {
+  display: inline-block;
+  width: 100px;
+}
+.create_expense input {
+  width: 200px;
+}
+.create_expense input[type="submit"] {
+  width: 80px;
+}
