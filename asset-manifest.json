@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/bora001.github.io/react_practice/static/css/main.db5e79d9.chunk.css",
+    "main.js": "/bora001.github.io/react_practice/static/js/main.9efe8e24.chunk.js",
+    "main.js.map": "/bora001.github.io/react_practice/static/js/main.9efe8e24.chunk.js.map",
+    "runtime-main.js": "/bora001.github.io/react_practice/static/js/runtime-main.5f05c701.js",
+    "runtime-main.js.map": "/bora001.github.io/react_practice/static/js/runtime-main.5f05c701.js.map",
+    "static/js/2.82ee274f.chunk.js": "/bora001.github.io/react_practice/static/js/2.82ee274f.chunk.js",
+    "static/js/2.82ee274f.chunk.js.map": "/bora001.github.io/react_practice/static/js/2.82ee274f.chunk.js.map",
+    "index.html": "/bora001.github.io/react_practice/index.html",
+    "static/css/main.db5e79d9.chunk.css.map": "/bora001.github.io/react_practice/static/css/main.db5e79d9.chunk.css.map",
+    "static/js/2.82ee274f.chunk.js.LICENSE.txt": "/bora001.github.io/react_practice/static/js/2.82ee274f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f05c701.js",
+    "static/js/2.82ee274f.chunk.js",
+    "static/css/main.db5e79d9.chunk.css",
+    "static/js/main.9efe8e24.chunk.js"
+  ]
+}
