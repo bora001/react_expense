@@ -7,7 +7,6 @@ import "./App.css";
 function App() {
   const [expenseOrigin, setExpenseOrigin] = useState([]);
   const [expenseData, setExpenseData] = useState([]);
-  const [createStatus, setCreateStatus] = useState(false);
 
   const getData = (newData) => {
     setExpenseData([...expenseData, newData]);
@@ -25,18 +24,10 @@ function App() {
     }
   };
 
-  const createExpense = (status) => {
-    setCreateStatus(status);
-  };
-
   return (
     <div className="expense_cnt">
       <h2>Let's get started!</h2>
-      {createStatus ? (
-        <NewExpense sendStatus={createExpense} sendData={getData} />
-      ) : (
-        <button onClick={createExpense}>Create Expense</button>
-      )}
+      <NewExpense sendData={getData} />
       <ExpenseFilter sendData={getMonth} />
       <ExpenseItem data={expenseData} />
     </div>
