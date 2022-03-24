@@ -28,7 +28,13 @@ const NewExpense = (props) => {
         </div>
         <div>
           <label>Date</label>
-          <input type="date" name="date" onChange={changeData} required />
+          <input
+            type="date"
+            name="date"
+            onChange={changeData}
+            min="2022-01-01"
+            required
+          />
         </div>
         <div>
           <button type="submit">Submit</button>

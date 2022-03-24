@@ -1,17 +1,35 @@
 import React, { useState } from "react";
 import NewExpense from "./components/NewExpense";
 import ExpenseItem from "./components/ExpenseItem";
+import ExpenseFilter from "./components/ExpenseFilter";
+import "./App.css";
 function App() {
+  const [expenseOrigin, setExpenseOrigin] = useState([]);
   const [expenseData, setExpenseData] = useState([]);
 
   const getData = (newData) => {
     console.log(newData);
     setExpenseData([...expenseData, newData]);
+    setExpenseOrigin([...expenseOrigin, newData]);
   };
+
+  const getMonth = (month) => {
+    console.log(month);
+    let filteredExpense = expenseOrigin.filter(
+      (a) => a.date.split("-")[1] === month
+    );
+    if (month === "00") {
+      setExpenseData(expenseOrigin);
+    } else {
+      setExpenseData(filteredExpense);
+    }
+  };
+
   return (
-    <div>
+    <div className="expense_cnt">
       <h2>Let's get started!</h2>
       <NewExpense sendData={getData} />
+      <ExpenseFilter sendData={getMonth} />
       <ExpenseItem data={expenseData} />
     </div>
   );
