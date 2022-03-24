@@ -13,6 +13,10 @@ const NewExpense = (props) => {
     e.preventDefault();
     e.target.reset();
     props.sendData(input);
+    props.sendStatus(false);
+  };
+  const cancelForm = () => {
+    props.sendStatus(false);
   };
 
   return (
@@ -38,6 +42,7 @@ const NewExpense = (props) => {
         </div>
         <div>
           <button type="submit">Submit</button>
+          <button onClick={cancelForm}>Cancel</button>
         </div>
       </form>
     </div>
