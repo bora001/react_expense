@@ -4,8 +4,6 @@
 .expense_item .expense_item_desc {
   display: flex;
   justify-content: space-between;
-  border: 1px solid blue;
-}
-.expense_item .expense_item_desc .expense_item_price {
-  border: 1px solid gold;
+  align-items: center;
+  padding: 0 20px;
 }

@@ -1,13 +1,15 @@
 .expense_filter {
   display: flex;
   width: 100%;
+  height: 50px;
   justify-content: space-between;
-  border: 1px solid gold;
+  padding: 0 20px;
+  background-color: rgb(165, 196, 253);
   align-items: center;
 }
 
 .expense_filter select {
   width: 70px;
-  height: 30px;
+  height: 25px;
   text-align: center;
 }

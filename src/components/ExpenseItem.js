@@ -8,7 +8,7 @@ function ExpenseItem(props) {
           <div className="expense_item" key={Math.random() * 9}>
             <div className="expense_item_desc">
               <div>{item.date}</div>
-              <h2>{item.title}</h2>
+              <h4>{item.title}</h4>
               <p className="expense_item_price">${item.amount}</p>
             </div>
           </div>

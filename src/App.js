@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="expense_cnt">
-      <h2>Let's get started!</h2>
+      <h2>Account book</h2>
       <NewExpense sendData={getData} />
       <ExpenseFilter sendData={getMonth} />
       <ExpenseItem data={expenseData} />

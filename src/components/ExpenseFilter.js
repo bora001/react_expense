@@ -6,7 +6,7 @@ const ExpenseFilter = (props) => {
   };
   return (
     <div className="expense_filter">
-      <h3>Filter By Month</h3>
+      <h4>Filter By Month</h4>
       <select onChange={getData} defaultValue="00">
         <option value="01">Jan</option>
         <option value="02">Feb</option>

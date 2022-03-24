@@ -1,15 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 * {
   box-sizing: border-box;
 }
 
 html {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Roboto Mono", monospace;
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
   margin: 0;
-  background-color: #3f3f3f;
 }
 
+button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  border: none;
+  color: #fff;
+  background-color: rgb(19, 80, 192);
+  cursor: pointer;
+}

@@ -21,7 +21,7 @@ const NewExpense = (props) => {
   };
 
   return (
-    <div>
+    <div className="create_box">
       {createStatus ? (
         <form className="create_expense" onSubmit={submitForm}>
           <div>
@@ -42,15 +42,17 @@ const NewExpense = (props) => {
               required
             />
           </div>
-          <div>
+          <div className="btn_box">
             <button type="submit">Submit</button>
             <button onClick={createForm}>Cancel</button>
           </div>
         </form>
       ) : (
-        <button value={true} onClick={createForm}>
-          Create Expense
-        </button>
+        <div className="create_btn">
+          <button value={true} onClick={createForm}>
+            Create Expense
+          </button>
+        </div>
       )}
     </div>
   );
